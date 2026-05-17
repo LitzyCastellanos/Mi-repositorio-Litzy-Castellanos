@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de Litzy Castellanos — Desarrolladora Frontend, Tegucigalpa Honduras">
+  <title>Litzy Castellanos — Frontend Developer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Cursor personalizado -->
+  <div class="cursor">
+    <div class="cursor-dot"></div>
+  </div>
+  <div class="cursor cursor-ring-wrapper" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9998;">
+    <div class="cursor-ring"></div>
+  </div>
+
+  <!-- ── Navbar ──────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">LC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Líneas decorativas laterales -->
+  <div class="side-line">
+    <a href="https://github.com/LitzyCastellanos" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/litzy-castellanos-727826404/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <!-- ── Hero ─────────────────────────────────────────────── -->
+  <section class="hero" style="position:relative; overflow:hidden;">
+    <h1 class="hero-title">
+      <em>Litzy</em>
+      <strong>Castellanos</strong>
+    </h1>
+    <p class="hero-sub">
+      Construyo interfaces elegantes con HTML, CSS y JavaScript.
+      Apasionada por el código limpio, el diseño funcional
+      y las experiencias que conectan con las personas.
+    </p>
+    <div class="hero-ctas">
+      <a href="proyectos.html" class="btn-primary">Ver proyectos →</a>
+      <a href="perfil.html" class="btn-ghost">Conocerme</a>
+    </div>
+
+    <!-- Tostón — foto circular con anillo giratorio -->
+    <div class="hero-photo-wrap">
+      <div class="hero-toston">
+        <!-- Anillo SVG con texto circular -->
+        <div class="hero-toston-ring">
+          <svg viewBox="0 0 350 350" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <path id="circle-text"
+                d="M 175,175 m -155,0 a 155,155 0 1,1 310,0 a 155,155 0 1,1 -310,0"/>
+            </defs>
+            <text>
+              <textPath href="#circle-text">
+                LITZY MABEL CASTELLANOS LÓPEZ · FRONTEND DEV · TEGUCIGALPA, HONDURAS · &nbsp;&nbsp;
+              </textPath>
+            </text>
+          </svg>
+        </div>
+        <!-- Foto -->
+        <div class="hero-toston-img">
+          <div class="toston-back"></div>
+          <img src="img/photo_4913750184051805147_y.jpg" alt="Litzy Castellanos">
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ── Proyectos destacados ──────────────────────────────── -->
+  <section class="section">
+    <p class="section-label reveal" data-delay="0">Trabajo selecto</p>
+    <h2 class="section-title reveal" data-delay="1">
+      Proyectos que<br><em>construí</em>
+    </h2>
+
+    <div class="projects-grid">
+
+      <!-- Proyecto 1: Red Neuronal Triaje -->
+      <a href="proyectos/proyecto-triaje.html" class="project-card reveal" data-delay="2">
+        <div class="card-number">01</div>
+        <span class="card-tag">Machine Learning</span>
+        <h3 class="card-title">Red Neuronal — Sistema de Triaje</h3>
+        <p class="card-desc">
+          Modelo de inteligencia artificial para clasificación y priorización
+          de pacientes en entornos médicos mediante redes neuronales.
+        </p>
+        <div class="card-techs">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">TensorFlow</span>
+          <span class="tech-badge">Pandas</span>
+          <span class="tech-badge">Keras</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      <!-- Proyecto 2: SITOP -->
+      <a href="proyectos/proyecto-sitop.html" class="project-card reveal" data-delay="3">
+        <div class="card-number">02</div>
+        <span class="card-tag">Frontend · Web</span>
+        <h3 class="card-title">SITOP — Empresa Constructora</h3>
+        <p class="card-desc">
+          Sitio web corporativo para empresa de construcción con diseño
+          responsivo, secciones de servicios, portafolio de obras y contacto.
+        </p>
+        <div class="card-techs">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </a>
+
+      <!-- Proyecto 3: Acceso UNAH -->
+      <a href="proyectos/proyecto-acceso-unah.html" class="project-card reveal" data-delay="4">
+        <div class="card-number">03</div>
+        <span class="card-tag">Sistema · Web</span>
+        <h3 class="card-title">Sistema de Acceso — UNAH</h3>
+        <p class="card-desc">
+          Plataforma de control de acceso universitario con autenticación,
+          registro de usuarios y gestión de permisos por roles.
+        </p>
+        <div class="card-techs">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Python</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </a>
+
+    </div>
+
+    <div style="margin-top:2.5rem;" class="reveal" data-delay="5">
+      <a href="proyectos.html" class="btn-ghost">Ver todos los proyectos →</a>
+    </div>
+  </section>
+
+  <div class="divider" style="margin: 0 3.5rem 0 7rem;"></div>
+
+  <!-- ── Sobre mí (breve) ──────────────────────────────────── -->
+  <section class="section" style="padding-top: 5rem; padding-bottom: 5rem;">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="section-label reveal" data-delay="0">Sobre mí</p>
+        <h2 class="section-title reveal" data-delay="1" style="font-size:2.2rem; margin-bottom:1.5rem;">
+          Código con<br><em>intención</em>
+        </h2>
+        <p class="reveal" data-delay="2">
+          Soy estudiante en el <strong>último período de Ingeniería en Sistemas</strong>
+          en la UNAH, Tegucigalpa. Me especializo en desarrollo Frontend con
+          experiencia real en proyectos académicos y profesionales.
+        </p>
+        <p class="reveal" data-delay="3">
+          Me apasiona construir interfaces que no solo funcionen, sino que
+          también sean <strong>bellas y accesibles</strong>. Cada línea de código
+          es una decisión de diseño.
+        </p>
+        <div style="margin-top:1.8rem;" class="reveal" data-delay="4">
+          <a href="perfil.html" class="btn-ghost">Ver perfil completo →</a>
+        </div>
+      </div>
+
+      <!-- Estadísticas -->
+      <div class="stat-grid reveal" data-delay="2">
+        <div class="stat-item">
+          <span class="stat-num">
+            <span data-count="3" data-suffix="">3</span><em>+</em>
+          </span>
+          <span class="stat-label">Proyectos reales</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">
+            <span data-count="4" data-suffix="">4</span><em>+</em>
+          </span>
+          <span class="stat-label">Años de estudio</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num">
+            <span data-count="5" data-suffix="">5</span><em>+</em>
+          </span>
+          <span class="stat-label">Tecnologías</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num"><em>∞</em></span>
+          <span class="stat-label">Pasión por el código</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Contacto ──────────────────────────────────────────── -->
+  <section id="contacto" class="contact-strip">
+    <div>
+      <h2 class="contact-title reveal" data-delay="0">
+        ¿Hablamos de<br><em>tu proyecto?</em>
+      </h2>
+    </div>
+    <div class="contact-links reveal" data-delay="1">
+      <a href="https://www.linkedin.com/in/litzy-castellanos-727826404/"
+         target="_blank" rel="noopener" class="contact-link">
+        ↗ LinkedIn
+      </a>
+      <a href="https://github.com/LitzyCastellanos"
+         target="_blank" rel="noopener" class="contact-link">
+        ↗ GitHub
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Footer ────────────────────────────────────────────── -->
+  <footer>
+    <p class="footer-copy">© 2025 <span>Litzy Castellanos</span> · Tegucigalpa, Honduras</p>
+    <p class="footer-copy">Diseñado y construido con <span>HTML · CSS · JS</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

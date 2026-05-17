@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Proyectos de Litzy Castellanos — Desarrolladora Frontend">
+  <title>Proyectos · Litzy Castellanos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor"><div class="cursor-dot"></div></div>
+  <div class="cursor cursor-ring-wrapper">
+    <div class="cursor-ring"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="index.html" class="nav-logo">LC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="side-line">
+    <a href="https://github.com/LitzyCastellanos" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://www.linkedin.com/in/litzy-castellanos-727826404/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+
+  <section class="hero hero-projects-view">
+    <p class="hero-eyebrow">Trabajo selecto</p>
+    <h1 class="hero-title">
+      <em>Proyectos</em>
+      <strong>que construí</strong>
+    </h1>
+    <p class="hero-sub">
+      Tres proyectos reales: desde inteligencia artificial hasta
+      desarrollo web corporativo y sistemas universitarios.
+    </p>
+  <!-- imagen al lado derecho -->
+    <div class="projects-hero-deco">
+  <img src="img/img-proyectos.png" alt="imagen decorativa proyectos">
+</div>
+  </section>
+
+  <section class="section section-projects-grid">
+
+    <!-- Proyecto 01 destacado -->
+    <div class="reveal project-featured" data-delay="0">
+      <div class="project-featured-info">
+        <div class="project-featured-header">
+          <span class="project-featured-number">01</span>
+          <span class="card-tag">Machine Learning · IA</span>
+        </div>
+        <h2 class="project-featured-title">
+          Red Neuronal — Sistema de <em class="text-highlight">Triaje</em>
+        </h2>
+        <p class="project-featured-desc">
+          Modelo de inteligencia artificial para clasificar y priorizar pacientes
+          en entornos médicos. La red neuronal analiza síntomas y signos vitales
+          para asignar niveles de urgencia de forma automatizada.
+        </p>
+        <div class="card-techs project-featured-techs">
+          <span class="tech-badge">Python</span>
+          <span class="tech-badge">TensorFlow / Keras</span>
+          <span class="tech-badge">Pandas</span>
+          <span class="tech-badge">Tkinter (GUI)</span> 
+          <span class="tech-badge">NumPy</span>
+        </div>
+        <a href="proyectos/proyecto-triaje.html" class="btn-primary btn-documentacion">Ver documentación →</a>
+      </div>
+      
+      <!-- Componente Code Card -->
+      <div class="code-card">
+        <p class="code-filename"># triaje_model.py</p>
+        <p><span class="code-keyword">import</span> tensorflow <span class="code-keyword">as</span> tf</p>
+        <p><span class="code-keyword">import</span> tensorflow <span class="code-keyword">as</span> keras</p>
+        <p><span class="code-keyword">from</span> tensorflow.keras <span class="code-keyword">import</span> layers</p>
+        <br>
+        <p><span class="code-variable">model</span> = keras.Sequential([</p>
+        <p>&nbsp;&nbsp;layers.Input(shape=(n_features,)),</p>
+        <br>
+        <p>&nbsp;&nbsp;layers.Dense(<span class="code-number">128</span>, activation=<span class="code-string">'relu'</span>),</p>
+        <p>&nbsp;&nbsp;layers.BatchNormalization(), <span class="code-comment"># Mantiene datos normalizados</span></p>
+        <p>&nbsp;&nbsp;layers.Dropout(<span class="code-number">0.3</span>),</p>
+        <br>
+        <p>&nbsp;&nbsp;layers.Dense(<span class="code-number">64</span>, activation=<span class="code-string">'relu'</span>),</p>
+        <p>&nbsp;&nbsp;layers.BatchNormalization(),</p>
+        <p>&nbsp;&nbsp;layers.Dropout(<span class="code-number">0.3</span>),</p>
+        <br>
+        <p>&nbsp;&nbsp;layers.Dense(<span class="code-number">32</span>, activation=<span class="code-string">'relu'</span>),</p>
+        <p>&nbsp;&nbsp;layers.Dropout(<span class="code-number">0.2</span>),</p>
+        <br>
+        <p>&nbsp;&nbsp;layers.Dense(n_clases, activation=<span class="code-string">'softmax'</span>)</p>
+        <p>])</p>
+        <br>
+        <p class="code-comment"># 5 niveles de clasificación de triaje ESI</p>
+      </div>
+    </div>
+
+    <!-- Sub-grid secundario -->
+    <div class="projects-subgrid">
+      <a href="proyectos/proyecto-sitop.html" class="project-card reveal" data-delay="1">
+        <div class="card-number">02</div>
+        <span class="card-tag">Frontend · Web Corporativa</span>
+        <h3 class="card-title">SITOP — Empresa Constructora</h3>
+        <p class="card-desc">Sitio web corporativo para empresa de construcción en Honduras. Diseño responsivo, servicios y portafolio de obras.</p>
+        <div class="card-techs">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </a>
+      <a href="proyectos/proyecto-acceso-unah.html" class="project-card reveal" data-delay="2">
+        <div class="card-number">03</div>
+        <span class="card-tag">Sistema Web · Accesos</span>
+        <h3 class="card-title">Sistema de Acceso — UNAH</h3>
+        <p class="card-desc">Plataforma de control de acceso universitario con autenticación, gestión de usuarios y permisos por roles.</p>
+        <div class="card-techs">
+          <span class="tech-badge">HTML5</span>
+          <span class="tech-badge">CSS3</span>
+          <span class="tech-badge">JavaScript</span>
+          <span class="tech-badge">Python</span>
+        </div>
+        <span class="card-arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="contact-strip">
+    <div>
+      <h2 class="contact-title reveal">¿Quieres ver más de<br><em>mi trabajo?</em></h2>
+    </div>
+    <div class="contact-links reveal" data-delay="1">
+      <a href="https://github.com/LitzyCastellanos" target="_blank" rel="noopener" class="contact-link">↗ GitHub</a>
+      <a href="perfil.html" class="contact-link">↗ Ver perfil</a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-copy">© 2025 <span>Litzy Castellanos</span> · Tegucigalpa, Honduras</p>
+    <p class="footer-copy">Diseñado y construido con <span>HTML · CSS · JS</span></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

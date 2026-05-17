@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Documentación: API Ingreso UNAH — Sistema de Control de Acceso Universitario">
+  <title>Ingreso UNAH · Sistema | Litzy Castellanos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="cursor"><div class="cursor-dot"></div></div>
+  <div class="cursor cursor-ring-wrapper" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9998;">
+    <div class="cursor-ring"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">LC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../perfil.html">Perfil</a></li>
+      <li><a href="../proyectos.html">Proyectos</a></li>
+      <li><a href="../contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero del proyecto -->
+  <section class="project-hero project-hero-bg" style="background-image: url('../img/unah-bg.jpg');">
+    <div class="project-hero-overlay"></div>
+
+    <div class="project-hero-content">
+      <a href="../proyectos.html" class="project-back">← Volver a proyectos</a>
+      <p class="hero-eyebrow">Proyecto 03 · API REST · Ingeniería de Software</p>
+      <h1 class="project-hero-title">
+        <em>Ingreso UNAH</em>
+        <strong class="project-hero-company">Sistema de Acceso Universitario</strong>
+      </h1>
+      <p class="project-hero-subtitle">
+        API REST para el sistema de control de acceso de la UNAH. Gestiona personas
+        (estudiantes, empleados y visitas), vehículos y reglas de negocio mediante
+        PostgreSQL con lógica ejecutada directamente en SQL.
+      </p>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Stack
+          </span>
+          <span class="meta-value meta-value-accent">TypeScript · Node.js</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            Base de datos
+          </span>
+          <span class="meta-value">PostgreSQL</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            Deploy
+          </span>
+          <span class="meta-value">Vercel · v0.app</span>
+        </div>
+      </div>
+
+
+ <!-- LOGO GIGANTE DE UNAH - CENTRADO en el área oscura -->
+    <div class="hero-logo-large">
+      <div class="hero-logo-circle-large">
+        <img src="../img/acceso-unah/logo-unah.png" alt="Logo UNAH">
+      </div>
+    </div>
+
+
+    </div>
+  </section>
+
+ <!-- ── Galería visual del proyecto (Grid 3x2 como SITOP) ──────────── -->
+  <section class="project-gallery">
+    <p class="section-label reveal" data-delay="0">Vista previa</p>
+    <h2 class="project-gallery-title reveal" data-delay="1">
+      Capturas del <em>sistema</em>
+    </h2>
+    
+    <div class="project-screenshots reveal" data-delay="2">
+      
+      <!-- Imagen 1 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/inicio-unah.png" alt="Dashboard del sistema de acceso UNAH" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Dashboard Principal</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>01 · DASHBOARD PRINCIPAL</span>
+        </div>
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah1.png" alt="Formulario de registro de persona" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Registro de Persona</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>02 · REGISTRO DE PERSONA</span>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah2.png" alt="Metodo de ingreso" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Búsqueda por DNI</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>03 · MÉTODO DE INGRESO</span>
+        </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah4.png" alt="Ingreso de personal y estudiantes" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Ingreso de Personal y Estudiantes</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>04 · INGRESO DE PERSONAL Y ESTUDIANTES
+
+          </span>
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah5.png" alt="Gestión de vehículos" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>API Endpoints</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>05 · GESTIÓN DE VEHÍCULOS</span>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah6.png" alt="Registro de vehículos" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>API Documentación</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>06 · REGISTRO DE VEHÍCULOS</span>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah7.png" alt="Registro de ingreso" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>API Documentación</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>07 · REGISTRO DE INGRESO</span>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/acceso-unah/unah8.png" alt="Envio de formularios" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>API Documentación</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>08 · ENVÍO DE FORMULARIOS</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- Documentación completa -->
+  <article class="project-content">
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Descripción general del sistema
+    </h2>
+    <p>
+      API REST construida con <strong>TypeScript y Node.js</strong> como proyecto de Ingeniería de Software
+      para la UNAH. Expone endpoints para gestionar el ingreso y registro de personas al campus universitario:
+      estudiantes, empleados y visitas (proveedores, contratistas).
+    </p>
+    <p>
+      Las reglas de negocio —como el control del formulario 03, contratos vigentes y el
+      límite de vehículos por persona— se ejecutan directamente en <strong>PostgreSQL</strong>,
+      manteniendo la lógica centralizada en la base de datos. El frontend fue desarrollado
+      y desplegado desde <strong>v0.app</strong> con sincronización automática a Vercel.
+    </p>
+
+    <div class="project-quote">
+      <p>
+        "Sincronizado automáticamente con tus implementaciones de v0.app.
+        Cualquier cambio en la aplicación desplegada se envía automáticamente a este repositorio."
+      </p>
+    </div>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+      Lógica del programa
+    </h2>
+    <ol>
+      <li><strong>Enrutamiento versioned:</strong> todos los endpoints viven bajo <code>/api/v1/</code> para soportar evolución sin romper clientes existentes.</li>
+      <li><strong>Upsert por DNI:</strong> los endpoints de personas hacen insert o update según si el DNI ya existe, evitando duplicados.</li>
+      <li><strong>Reglas de negocio en SQL:</strong> validaciones como formulario 03, contratos vigentes y límite de 2 vehículos activos se ejecutan con stored procedures o constraints en PostgreSQL.</li>
+      <li><strong>Control de vehículos:</strong> cada persona puede tener máximo 2 vehículos activos; el campo <code>prestamo_temporal</code> marca si es de uso temporal.</li>
+      <li><strong>Errores estandarizados:</strong> validaciones devuelven HTTP 400 con mensaje descriptivo; errores de negocio retornan 422.</li>
+    </ol>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+      Cómo funciona internamente
+    </h2>
+    <ul>
+      <li><strong>Runtime:</strong> Node.js 18+ con TypeScript compilado, tipado estricto en modelos y controladores.</li>
+      <li><strong>Base de datos:</strong> PostgreSQL en <code>localhost</code>, BD <code>sistema_ingreso</code>, usuario <code>app_rw</code>.</li>
+      <li><strong>Queries:</strong> SQL parametrizado directo para mantener la lógica de negocio en el motor de BD.</li>
+      <li><strong>Frontend:</strong> generado y desplegado desde v0.app (React + CSS), sincronizado automáticamente con Vercel vía GitHub.</li>
+      <li><strong>Variables de entorno:</strong> configuración de conexión centralizada en <code>.env</code> (no se incluye en el repo).</li>
+    </ul>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      Tecnologías utilizadas
+    </h2>
+    <div class="tech-stack">
+      <span class="tech-pill">TypeScript</span>
+      <span class="tech-pill">JavaScript</span>
+      <span class="tech-pill">Node.js 18+</span>
+      <span class="tech-pill">PostgreSQL</span>
+      <span class="tech-pill">CSS3</span>
+      <span class="tech-pill">Vercel</span>
+
+    </div>
+<h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.63 3.4 2 2 0 0 1 3.6 1.21h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.95-.95a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21.73 16z"/></svg>
+      Endpoints de la API
+    </h2>
+
+    <table class="project-table">
+      <tr>
+        <th>Método</th>
+        <th>Ruta</th>
+        <th>Descripción</th>
+      </tr>
+      <tr>
+        <td class="page-name">GET</td>
+        <td><code>/health</code></td>
+        <td>Estado del servidor</td>
+      </tr>
+      <tr>
+        <td class="page-name">GET</td>
+        <td><code>/api/v1/personas/:dni</code></td>
+        <td>Buscar persona por DNI</td>
+      </tr>
+      <tr>
+        <td class="page-name">POST</td>
+        <td><code>/api/v1/personas/estudiante</code></td>
+        <td>Crear o editar estudiante</td>
+      </tr>
+      <tr>
+        <td class="page-name">POST</td>
+        <td><code>/api/v1/personas/empleado</code></td>
+        <td>Crear o editar empleado</td>
+      </tr>
+      <tr>
+        <td class="page-name">POST</td>
+        <td><code>/api/v1/visitas</code></td>
+        <td>Crear o editar visita/proveedor</td>
+      </tr>
+      <tr>
+        <td class="page-name">POST</td>
+        <td><code>/api/v1/vehiculos</code></td>
+        <td>Registrar vehículo (máx. 2 activos)</td>
+      </tr>
+    </table>
+
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Guía de instalación paso a paso
+    </h2>
+
+    <h3>Requisitos previos</h3>
+    <ul>
+      <li>Node.js 18 o superior</li>
+      <li>PostgreSQL corriendo en <code>localhost</code> con la BD <code>sistema_ingreso</code> y usuario <code>app_rw</code></li>
+      <li>Git instalado</li>
+      <li>Terminal / línea de comandos</li>
+    </ul>
+
+    <ol class="step-list">
+      <li>
+        <strong>Clonar el repositorio</strong><br>
+        <code>git clone https://github.com/LitzyCastellanos/v0-university-login-system.git</code><br>
+        <code>cd v0-university-login-system</code>
+      </li>
+      <li>
+        <strong>Copiar y ajustar variables de entorno</strong><br>
+        <code>cp .env.example .env</code><br>
+        Editar <code>.env</code> con las credenciales de tu instancia PostgreSQL.
+      </li>
+      <li>
+        <strong>Instalar dependencias</strong><br>
+        <code>npm install</code>
+      </li>
+      <li>
+        <strong>Levantar el servidor en desarrollo</strong><br>
+        <code>npm run dev</code><br>
+        El servidor queda disponible en <code>http://localhost:3000</code>
+      </li>
+    </ol>
+
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      Estructura del proyecto
+    </h2>
+    <pre><code>v0-university-login-system/
+├── src/
+│   ├── routes/
+│   │   ├── personas.ts       # Rutas estudiante y empleado
+│   │   ├── visitas.ts        # Rutas visitas / proveedores
+│   │   └── vehiculos.ts      # Ruta de vehículos
+│   ├── controllers/
+│   │   ├── personas.ts
+│   │   ├── visitas.ts
+│   │   └── vehiculos.ts
+│   ├── db/
+│   │   └── pool.ts           # Conexión PostgreSQL
+│   └── index.ts              # Entry point, middleware global
+├── .env.example              # Plantilla de variables de entorno
+├── package.json
+├── tsconfig.json
+└── README.md</code></pre>
+
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Notas importantes
+    </h2>
+    <ul>
+      <li>Los errores de validación devuelven HTTP <strong>400</strong> con mensaje descriptivo.</li>
+      <li>Las reglas de negocio (formulario 03, contratos, límite de vehículos) se ejecutan en <strong>SQL</strong> directamente en PostgreSQL.</li>
+      <li>El campo <code>face_template_b64</code> acepta un template facial en base64 o <code>null</code> si no se utiliza reconocimiento facial.</li>
+      <li>El límite de <strong>2 vehículos activos</strong> por persona es validado a nivel de base de datos.</li>
+    </ul>
+
+  </article>
+
+  <!-- Navegación entre proyectos -->
+  <div class="project-navigation">
+    <a href="proyecto-sitop.html" class="project-nav-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Proyecto anterior
+    </a>
+    <a href="../proyectos.html" class="project-nav-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Volver a proyectos
+    </a>
+    <span class="project-nav-link" style="opacity:0.3;pointer-events:none;">
+      Proyecto siguiente
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:0.3rem;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </span>
+  </div>
+
+  <footer>
+    <p class="footer-copy">© 2025 <span>Litzy Castellanos</span> · Tegucigalpa, Honduras</p>
+    <p class="footer-copy">Proyecto académico · <span>UNAH Ingeniería en Sistemas</span></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

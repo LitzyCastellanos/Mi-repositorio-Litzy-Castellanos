@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SITOP — Sitio Web Oficial de Empresa Constructora Hondureña">
+  <title>SITOP · Constructora | Litzy Castellanos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="cursor"><div class="cursor-dot"></div></div>
+  <div class="cursor cursor-ring-wrapper" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9998;">
+    <div class="cursor-ring"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">LC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../perfil.html">Perfil</a></li>
+      <li><a href="../proyectos.html">Proyectos</a></li>
+      <li><a href="../contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Hero del proyecto -->
+  <section class="project-hero project-hero-bg" style="background-image: url('../img/sitop-bg.jpg');">
+    <div class="project-hero-overlay"></div>
+
+    <div class="project-hero-content">
+
+      <!-- Texto izquierda -->
+      <div class="project-hero-text">
+        <a href="../proyectos.html" class="project-back">← Volver a proyectos</a>
+        <p class="hero-eyebrow">Proyecto 02 · Frontend Web Corporativa</p>
+        <h1 class="project-hero-title">
+          <em>SITOP</em>
+          <strong class="project-hero-company">Ingeniería Civil · Honduras</strong>
+        </h1>
+        <p class="project-hero-subtitle">
+          Sitio web institucional para empresa hondureña de ingeniería civil especializada en 
+          servicios de construcción, topografía y supervisión de obras.
+        </p>
+        <div class="project-meta">
+          <div class="meta-item">
+            <span class="meta-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Sitio web
+            </span>
+            <span class="meta-value meta-value-accent">sitophn.com</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+              Cliente
+            </span>
+            <span class="meta-value">SITOP Honduras</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              Deploy
+            </span>
+            <span class="meta-value">Netlify + GrupoHost</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Logo derecha -->
+      <div class="hero-logo-large">
+        <div class="hero-logo-circle-large">
+          <img src="../img/sitop-proyecto/logo-sitop.png" alt="Logo SITOP">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Galería visual del proyecto -->
+  <section class="project-gallery">
+    <p class="section-label reveal" data-delay="0">Vista previa</p>
+    <h2 class="project-gallery-title reveal" data-delay="1">
+      Capturas del <em>sitio</em>
+    </h2>
+    
+    <div class="project-screenshots reveal" data-delay="2">
+      
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/index1.png" alt="Hero SITOP" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Hero Section</span>';">
+        </div>
+        <div class="screenshot-label"><span>01 · HERO PRINCIPAL</span></div>
+      </div>
+
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/index2.png" alt="Quienes Somos SITOP" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Quienes Somos</span>';">
+        </div>
+        <div class="screenshot-label"><span>02 · QUIENES SOMOS</span></div>
+      </div>
+
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/index4.png" alt="Proyectos Destacados SITOP" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Proyectos Destacados</span>';">
+        </div>
+        <div class="screenshot-label"><span>03 · PROYECTOS DESTACADOS</span></div>
+      </div>
+
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/index5.png" alt="Contactanos SITOP"
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Contáctanos</span>';">
+        </div>
+        <div class="screenshot-label"><span>04 · CONTÁCTANOS</span></div>
+      </div>
+
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/index7.png" alt="Información de contacto SITOP" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Información</span>';">
+        </div>
+        <div class="screenshot-label"><span>05 · INFORMACIÓN DE PROYECTOS</span></div>
+      </div>
+
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/sitop-proyecto/somos2.png" alt="Servicios SITOP" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Servicios</span>';">
+        </div>
+        <div class="screenshot-label"><span>06 · SERVICIOS</span></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Documentación completa -->
+  <article class="project-content">
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      Descripción general del sistema
+    </h2>
+    <p>
+      Desarrollo completo del <strong>sitio web institucional</strong> para SITOP, una empresa 
+      hondureña de ingeniería civil con amplia trayectoria en servicios de construcción, 
+      topografía de precisión y supervisión de obras. El sitio funciona como carta de 
+      presentación digital y plataforma de contacto para potenciales clientes.
+    </p>
+    <p>
+      Construido completamente con <strong>HTML5 semántico, CSS3 moderno y JavaScript vanilla</strong>, 
+      sin dependencias externas. Diseño totalmente responsive, optimizado para SEO y con 
+      rendimiento superior al 95% en Lighthouse.
+    </p>
+
+    <div class="project-stats">
+      <div class="stat-card">
+        <span class="stat-card-number">5</span>
+        <span class="stat-card-label">Páginas</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">3</span>
+        <span class="stat-card-label">Tecnologías</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">100%</span>
+        <span class="stat-card-label">Responsive</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">95+</span>
+        <span class="stat-card-label">Performance</span>
+      </div>
+    </div>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      Estructura del proyecto
+    </h2>
+    <pre><code>sitop-web/
+├── index.html          # Página de inicio con hero slider
+├── nosotros.html       # Quiénes somos, misión y visión
+├── servicios.html      # Catálogo completo de servicios
+├── proyectos.html      # Galería con filtros y modal
+├── contacto.html       # Formulario y datos de contacto
+├── style.css           # Estilos globales
+├── script.js           # Lógica e interactividad
+└── img/                # Recursos de imagen optimizados</code></pre>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+      Descripción de páginas
+    </h2>
+    
+    <table class="project-table">
+      <tr>
+        <th>Página</th>
+        <th>Contenido</th>
+      </tr>
+      <tr>
+        <td class="page-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="table-icon"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          Inicio
+        </td>
+        <td>Hero slider con imágenes de obras, servicios destacados, proyectos recientes y sección de contacto.</td>
+      </tr>
+      <tr>
+        <td class="page-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="table-icon"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          Quiénes somos
+        </td>
+        <td>Historia de la empresa, misión, visión y valores institucionales con timeline.</td>
+      </tr>
+      <tr>
+        <td class="page-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="table-icon"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          Servicios
+        </td>
+        <td>Catálogo completo: construcción, topografía, supervisión de obras, planificación y consultoría.</td>
+      </tr>
+      <tr>
+        <td class="page-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="table-icon"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+          Proyectos
+        </td>
+        <td>Galería con filtros por categoría, visualización tipo mosaico y modal con detalles de cada obra.</td>
+      </tr>
+      <tr>
+        <td class="page-name">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="table-icon"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Contacto
+        </td>
+        <td>Formulario de contacto funcional, datos de la empresa, mapa de ubicación y redes sociales.</td>
+      </tr>
+    </table>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      Funcionalidades destacadas
+    </h2>
+    <ul>
+      <li><strong>Hero Slider:</strong> Carrusel automático con imágenes de obras realizadas y transiciones suaves.</li>
+      <li><strong>Galería filtrable:</strong> Sistema de filtros por categoría con animaciones CSS.</li>
+      <li><strong>Modal de proyectos:</strong> Ventana emergente con detalles completos de cada obra al hacer clic.</li>
+      <li><strong>Formulario de contacto:</strong> Validación en tiempo real con JavaScript.</li>
+      <li><strong>Navegación sticky:</strong> Menú que se oculta al hacer scroll down y reaparece al hacer scroll up.</li>
+      <li><strong>Scroll to top:</strong> Botón flotante para volver al inicio de la página.</li>
+      <li><strong>Animaciones:</strong> Reveal on scroll, hover effects en tarjetas y transiciones suaves.</li>
+      <li><strong>Mobile-first:</strong> Diseño adaptable con menú hamburguesa y galería responsive.</li>
+    </ul>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      Tecnologías utilizadas
+    </h2>
+    <div class="tech-stack">
+      <span class="tech-pill">HTML5 Semántico</span>
+      <span class="tech-pill">CSS3 (Grid + Flexbox)</span>
+      <span class="tech-pill">JavaScript Vanilla</span>
+      <span class="tech-pill">Responsive Design</span>
+      <span class="tech-pill">CSS Animations</span>
+      <span class="tech-pill">SEO On-Page</span>
+      <span class="tech-pill">Netlify Deploy</span>
+      <span class="tech-pill">GrupoHost Domain</span>
+    </div>
+
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Guía de instalación paso a paso
+    </h2>
+
+    <h3>Requisitos previos</h3>
+    <ul>
+      <li>Cualquier navegador web moderno (Chrome, Firefox, Edge, Safari)</li>
+      <li>Editor de código (VS Code recomendado)</li>
+      <li>Git (para clonar el repositorio)</li>
+      <li>Cuenta en Netlify (para deploy)</li>
+    </ul>
+
+    <ol class="step-list">
+      <li>
+        <strong>Clonar el repositorio</strong><br>
+        <code>git clone https://github.com/LitzyCastellanos/sitop-web.git</code><br>
+        <code>cd sitop-web</code>
+      </li>
+      <li>
+        <strong>Abrir en el navegador</strong><br>
+        Doble clic en <code>index.html</code> o usar Live Server en VS Code.
+      </li>
+      <li>
+        <strong>Personalizar contenido</strong><br>
+        Editar textos en los archivos <code>.html</code> y cambiar imágenes en la carpeta <code>/img</code>.
+      </li>
+      <li>
+        <strong>Desplegar en Netlify</strong><br>
+        Arrastrar la carpeta del proyecto a Netlify o conectar el repositorio de GitHub para deploy automático.
+      </li>
+      <li>
+        <strong>Configurar dominio personalizado</strong><br>
+        En Netlify → Domain Settings → Add custom domain → <code>sitophn.com</code> (adquirido en GrupoHost).
+      </li>
+    </ol>
+
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+      Sobre SITOP
+    </h2>
+    <div class="project-quote">
+      <p>
+        "SITOP es una empresa hondureña de ingeniería civil comprometida con la calidad 
+        y precisión en cada proyecto. Ofrece servicios integrales que van desde la topografía 
+        y planificación hasta la construcción y supervisión de obras."
+      </p>
+    </div>
+    <p>
+      Con años de experiencia en el mercado hondureño, SITOP se ha posicionado como un 
+      referente en <strong>ingeniería civil</strong>, combinando tecnología de punta con 
+      un equipo humano altamente calificado.
+    </p>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+      Despliegue
+    </h2>
+    <ul>
+      <li><strong>Hosting:</strong> Netlify (gratuito con SSL incluido)</li>
+      <li><strong>Dominio:</strong> <code>sitophn.com</code> adquirido en GrupoHost</li>
+      <li><strong>SSL:</strong> Certificado automático de Netlify</li>
+      <li><strong>CI/CD:</strong> Deploy automático al hacer push a la rama <code>main</code></li>
+    </ul>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      Notas importantes
+    </h2>
+    <ul>
+      <li>El sitio es 100% responsive gracias al uso de Flexbox, Grid y media queries.</li>
+      <li>Las animaciones están optimizadas para no afectar el rendimiento.</li>
+      <li>El formulario de contacto incluye validación frontend con JavaScript.</li>
+      <li>El slider del hero es automático pero también permite navegación manual.</li>
+      <li>La galería de proyectos se puede filtrar por categoría (construcción, topografía, supervisión).</li>
+      <li>Se recomienda optimizar las imágenes antes de subirlas para mejorar el rendimiento.</li>
+    </ul>
+  </article>
+
+  <!-- Navegación entre proyectos -->
+  <div class="project-navigation">
+    <a href="proyecto-triaje.html" class="project-nav-link">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Proyecto anterior
+    </a>
+    <a href="../proyectos.html" class="project-nav-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Volver a proyectos
+    </a>
+    <a href="proyecto-acceso-unah.html" class="project-nav-link">
+      Proyecto siguiente
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:0.3rem;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    <p class="footer-copy">© 2025 <span>Litzy Castellanos</span> · Tegucigalpa, Honduras</p>
+    <p class="footer-copy">Proyecto freelance · <span>SITOP Honduras</span></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

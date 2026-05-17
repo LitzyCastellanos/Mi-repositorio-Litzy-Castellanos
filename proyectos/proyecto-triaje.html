@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sistema de Triaje Médico con Red Neuronal Artificial — Litzy Castellanos">
+  <title>Red Neuronal · Triaje | Litzy Castellanos</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <div class="cursor"><div class="cursor-dot"></div></div>
+  <div class="cursor cursor-ring-wrapper" style="position:fixed;top:0;left:0;pointer-events:none;z-index:9998;">
+    <div class="cursor-ring"></div>
+  </div>
+
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">LC<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../perfil.html">Perfil</a></li>
+      <li><a href="../proyectos.html">Proyectos</a></li>
+      <li><a href="../contacto.html">Contacto</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ── Hero del proyecto ──────────────────────────────── -->
+  <section class="project-hero project-hero-bg" style="background-image: url('../img/triaje-bg.jpg');">
+    <div class="project-hero-overlay"></div>
+    
+    <div class="project-hero-content">
+      <a href="../proyectos.html" class="project-back">← Volver a proyectos</a>
+      <p class="hero-eyebrow">Proyecto 01 · Inteligencia Artificial · Machine Learning</p>
+      <h1 class="project-hero-title">
+        <em>Red Neuronal</em>
+        <strong class="project-hero-company">Sistema de Triaje Médico</strong>
+      </h1>
+      <p class="project-hero-subtitle">
+        Sistema de clasificación de pacientes en triaje médico basado en una 
+        Red Neuronal Artificial (RNA) desarrollada en Python con TensorFlow. 
+        Predice el nivel ESI (1 al 5) a partir de signos vitales y datos clínicos.
+      </p>
+      <div class="project-meta">
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            Stack
+          </span>
+          <span class="meta-value meta-value-accent">Python · TensorFlow</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Clasificación
+          </span>
+          <span class="meta-value">ESI 5 niveles</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="meta-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            Interfaz
+          </span>
+          <span class="meta-value">Tkinter GUI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ── Galería en Grid 3x2 (como los otros proyectos) ──── -->
+  <section class="project-gallery">
+    <p class="section-label reveal" data-delay="0">Galería del proyecto</p>
+    <h2 class="project-gallery-title reveal" data-delay="1">
+      Visualización del <em>sistema</em>
+    </h2>
+    
+    <div class="project-screenshots reveal" data-delay="2">
+
+      <!-- Imagen 2 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/triaje-imagenes/triaje1.png" alt="Entrada de datos del paciente" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Entrada de<br>Datos</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>01 · DATOS DEL PACIENTE</span>
+        </div>
+      </div>
+
+      <!-- Imagen 3 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/triaje-imagenes/triaje2.png" alt="Resultado de predicción ESI 1" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Predicción<br>ESI</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>02 · PREDICCIÓN ESI 1</span>
+        </div>
+      </div>
+
+      <!-- Imagen 4 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/triaje-imagenes/triaje3.png" alt="Prediccion de el nivel ESI 5" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Curva de<br>Entrenamiento</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>03 · PREDICCIÓN ESI 5</span>
+        </div>
+      </div>
+
+      <!-- Imagen 5 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/triaje-imagenes/triaje4.png" alt="Prediccion de el nivel ESI 2" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Probabilidades<br>por Clase</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>04 · PREDICCIÓN ESI 2</span>
+        </div>
+      </div>
+
+      <!-- Imagen 6 -->
+      <div class="screenshot-card">
+        <div class="screenshot-image">
+          <img src="../img/triaje-imagenes/cod5-rna.png" alt="Curva de activación ReLU" 
+               onerror="this.style.display='none';this.parentElement.innerHTML='<span class=screenshot-placeholder>Indicador<br>Visual</span>';">
+        </div>
+        <div class="screenshot-label">
+          <span>05 · CURVA DE RELU</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Documentación ──────────────────────────────────── -->
+  <article class="project-content">
+
+    <!-- Stats -->
+    <div class="project-stats">
+      <div class="stat-card">
+        <span class="stat-card-number">5</span>
+        <span class="stat-card-label">Niveles ESI</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">RNA</span>
+        <span class="stat-card-label">Arquitectura</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">3.11</span>
+        <span class="stat-card-label">Python</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-card-number">GUI</span>
+        <span class="stat-card-label">Tkinter</span>
+      </div>
+    </div>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+      Descripción del proyecto
+    </h2>
+    <p>
+      Este proyecto es un <strong>sistema de clasificación de pacientes en triaje médico</strong> 
+      basado en una <strong>Red Neuronal Artificial (RNA)</strong> desarrollada en 
+      <strong>Python con TensorFlow</strong>.
+    </p>
+    <p>
+      El modelo predice el <strong>nivel de prioridad de atención médica</strong> 
+      (ESI 1 a ESI 5) a partir de datos clínicos como signos vitales, laboratorios 
+      y motivo de consulta. La aplicación incluye una <strong>interfaz gráfica (GUI)</strong> 
+      creada con Tkinter que permite ingresar datos de un paciente y obtener una 
+      predicción en tiempo real.
+    </p>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+      ¿Qué es el sistema ESI?
+    </h2>
+    <p>
+      El <strong>Emergency Severity Index (ESI)</strong> clasifica a los pacientes según la urgencia:
+    </p>
+
+    <table class="project-table">
+      <tr>
+        <th>Nivel</th>
+        <th>Descripción</th>
+        <th>Color</th>
+      </tr>
+      <tr>
+        <td class="page-name">ESI 1</td>
+        <td>Crítico (riesgo vital inmediato)</td>
+        <td style="color:#ff4444;">● Rojo</td>
+      </tr>
+      <tr>
+        <td class="page-name">ESI 2</td>
+        <td>Emergencia</td>
+        <td style="color:#ff8844;">● Naranja</td>
+      </tr>
+      <tr>
+        <td class="page-name">ESI 3</td>
+        <td>Urgente</td>
+        <td style="color:#ffcc00;">● Amarillo</td>
+      </tr>
+      <tr>
+        <td class="page-name">ESI 4</td>
+        <td>Menos urgente</td>
+        <td style="color:#44cc44;">● Verde</td>
+      </tr>
+      <tr>
+        <td class="page-name">ESI 5</td>
+        <td>No urgente</td>
+        <td style="color:#4488cc;">● Azul</td>
+      </tr>
+    </table>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+      ¿Cómo funciona?
+    </h2>
+    <ol>
+      <li>Se carga un conjunto de <strong>datos clínicos</strong> de pacientes.</li>
+      <li>Se limpian y procesan los datos.</li>
+      <li>Se convierten variables categóricas en numéricas.</li>
+      <li>Se entrena una <strong>red neuronal multicapa</strong>.</li>
+      <li>El modelo aprende a clasificar el nivel ESI.</li>
+      <li>La interfaz permite ingresar datos de un paciente.</li>
+      <li>El sistema <strong>predice el nivel de urgencia en tiempo real</strong>.</li>
+    </ol>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06"/></svg>
+      Características del modelo
+    </h2>
+    <ul>
+      <li><strong>Red neuronal con capas densas</strong> (Dense layers)</li>
+      <li><strong>Dropout</strong> para evitar sobreajuste</li>
+      <li><strong>Batch Normalization</strong> para estabilizar el entrenamiento</li>
+      <li><strong>Early Stopping</strong> para detener el entrenamiento cuando converge</li>
+      <li><strong>Interfaz gráfica (Tkinter)</strong> para predicciones en tiempo real</li>
+      <li><strong>Indicador visual por color</strong> según nivel ESI</li>
+    </ul>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+      Interfaz del sistema
+    </h2>
+    <p>Al ejecutar el programa se abre una ventana donde puedes ingresar:</p>
+    <ul>
+      <li>Edad</li>
+      <li>Sexo</li>
+      <li>Presión arterial</li>
+      <li>Frecuencia cardíaca</li>
+      <li>Temperatura</li>
+      <li>Laboratorios</li>
+      <li>Motivo de consulta</li>
+    </ul>
+    <p>Luego presionas <strong>"Predecir nivel ESI"</strong> y el sistema mostrará:</p>
+    <ul>
+      <li>Nivel ESI (1–5)</li>
+      <li>Probabilidades por clase</li>
+      <li>Indicador visual por color</li>
+    </ul>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+      Tecnologías utilizadas
+    </h2>
+    <div class="tech-stack">
+      <span class="tech-pill">Python 3.11</span>
+      <span class="tech-pill">TensorFlow / Keras</span>
+      <span class="tech-pill">Pandas</span>
+      <span class="tech-pill">NumPy</span>
+      <span class="tech-pill">Scikit-learn</span>
+      <span class="tech-pill">Tkinter</span>
+      <span class="tech-pill">CSV Dataset</span>
+    </div>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      Guía de instalación paso a paso
+    </h2>
+
+    <h3>Requisitos previos</h3>
+    <ul>
+      <li><strong>Python 3.11</strong> específicamente (requerido)</li>
+      <li>pip (gestor de paquetes de Python)</li>
+      <li>Git instalado</li>
+      <li>Verificar versión: <code>python --version</code></li>
+    </ul>
+
+    <ol class="step-list">
+      <li>
+        <strong>Clonar el repositorio</strong><br>
+        <code>git clone https://github.com/LitzyCastellanos/Sistema-de-Triaje-RNA.git</code><br>
+        <code>cd Sistema-de-Triaje-RNA</code>
+      </li>
+      <li>
+        <strong>Instalar dependencias</strong><br>
+        <code>pip install pandas numpy scikit-learn tensorflow</code>
+      </li>
+      <li>
+        <strong>Ejecutar el sistema</strong><br>
+        <code>python triaje_RNA.py</code>
+      </li>
+      <li>
+        <strong>Usar la interfaz</strong><br>
+        Ingresar datos del paciente → Clic en "Predecir nivel ESI" → Ver resultado
+      </li>
+    </ol>
+
+    <h2>
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="heading-icon"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+      Estructura del proyecto
+    </h2>
+    <pre><code>Sistema-de-Triaje-RNA/
+├── triaje_RNA.py                    # Código principal + GUI
+├── feedmml_ed_triage_dataset.csv    # Dataset de entrenamiento
+├── modelo_triaje_esi.h5             # Modelo entrenado (generado)
+└── README.md                        # Documentación</code></pre>
+
+    <div class="project-quote">
+      <p>
+        "La inteligencia artificial aplicada a la salud puede reducir 
+        tiempos de espera en emergencias y ayudar al personal médico 
+        a priorizar pacientes críticos de forma más eficiente."
+      </p>
+    </div>
+
+  </article>
+
+  <!-- ── Navegación entre proyectos ──────────────────────── -->
+  <div class="project-navigation">
+    <span class="project-nav-link" style="opacity:0.3;pointer-events:none;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+      Proyecto anterior
+    </span>
+    <a href="../proyectos.html" class="project-nav-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:0.3rem;"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+      Volver a proyectos
+    </a>
+    <a href="proyecto-sitop.html" class="project-nav-link">
+      Proyecto siguiente
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-left:0.3rem;"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+  </div>
+
+  <footer>
+    <p class="footer-copy">© 2025 <span>Litzy Castellanos</span> · Tegucigalpa, Honduras</p>
+    <p class="footer-copy">Proyecto académico · <span>UNAH · IA aplicada a la salud</span></p>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  
+</body>
+</html>
