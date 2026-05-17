@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://litzycastellanos.vercel.app)
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-black?logo=vercel&logoColor=white)](https://mi-repositorio-litzy-castellanos.vercel.app)
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)](https://developer.mozilla.org/es/docs/Web/HTML)
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)](https://developer.mozilla.org/es/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/es/docs/Web/JavaScript)
@@ -23,7 +23,7 @@ Portafolio web personal desarrollado desde cero con HTML5, CSS3 y JavaScript pur
 |---|---|
 | HTML5 | Estructura semantica |
 | CSS3 | Grid, Flexbox, animaciones, variables CSS |
-| JavaScript Vanilla | Interactividad sin dependencias |
+| JavaScript | Interactividad sin dependencias |
 | Vercel | Hosting y despliegue continuo |
 
 ---
@@ -81,3 +81,10 @@ No requiere dependencias ni servidor backend.
 
 GitHub: [@LitzyCastellanos](https://github.com/LitzyCastellanos)  
 LinkedIn: [linkedin.com/in/litzycastellanos](https://linkedin.com/in/litzycastellanos)
+
+
+---
+
+## Ver portafolio
+
+[mi-repositorio-litzy-castellanos.vercel.app](https://mi-repositorio-litzy-castellanos.vercel.app)
